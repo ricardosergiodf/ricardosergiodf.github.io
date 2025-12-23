@@ -1,50 +1,343 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricardo Sérgio Duarte Filho</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfólio de Ricardo Duarte - RPA | Hyperautomation | Python" />
+  <title>Ricardo Duarte • RPA Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
 
-    <div>
-        <div>
-            <h1 class="fonte" id="nome">Ricardo Sérgio Duarte Filho</h1>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#topo" aria-label="Ir para o topo">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Ricardo Duarte</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav__toggleBar"></span>
+          <span class="nav__toggleBar"></span>
+          <span class="nav__toggleBar"></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+
+        <div class="nav__links" id="navLinks">
+          <a href="#sobre">Sobre</a>
+          <a href="#competencias">Competências</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#formacao">Formação</a>
+          <a href="#contato" class="btn btn--sm">Contato</a>
+          <button id="themeToggle" class="chip" type="button" aria-label="Alternar tema">
+            <span aria-hidden="true">🌓</span> Tema
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="topo">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="kicker">RPA • Hyperautomation • Python</p>
+          <h1>Automação que reduz tempo, erros e atrito operacional.</h1>
+
+          <p class="lead">
+            Desenvolvedor especialista em automação orientado a resultados, com experiência prática em automação com Python e outras plataformas,
+            desenvolvimento de software e metodologias ágeis — focado em identificar ineficiências e entregar soluções escaláveis.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contato">Fale comigo</a>
+            <a class="btn btn--ghost" href="#experiencia">Ver experiência</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="metaCard">
+              <span class="metaCard__label">Localização</span>
+              <span class="metaCard__value">Fortaleza e Região</span>
+            </div>
+            <div class="metaCard">
+              <span class="metaCard__label">Foco</span>
+              <span class="metaCard__value">RPA • Pipelines • Eficiência</span>
+            </div>
+          </div>
         </div>
 
-        <div>
-            
-        </div><p class="fonte"><img id="foto" src="minha-foto.jpeg" alt="minha-foto" width="180px">
-            <br descricao>Futuro Desenvolvedor Web Full Stack 😎</p>
+        <aside class="hero__aside" aria-label="Cartão de perfil">
+          <div class="profileCard">
+            <div class="profileCard__top">
+              <div class="avatar" aria-hidden="true">RD</div>
+              <div>
+                <h2 class="profileCard__name">Ricardo Duarte</h2>
+                <p class="profileCard__role">RPA | Hyperautomation | Python | Git | Rocketbot | Automation Anywhere | AI</p>
+              </div>
+            </div>
+
+            <div class="profileCard__links">
+              <a class="linkRow" href="mailto:ricardosergiodf@gmail.com">
+                <span class="linkRow__icon" aria-hidden="true">✉️</span>
+                <span>ricardosergiodf@gmail.com</span>
+              </a>
+
+              <a class="linkRow" href="tel:8+555997934028">
+                <span class="linkRow__icon" aria-hidden="true">📱</span>
+                <span>+55 (85) 99793-4028</span>
+              </a>
+
+              <a class="linkRow" href="https://www.linkedin.com/in/ricardo-duarte-dev" target="_blank" rel="noreferrer">
+                <span class="linkRow__icon" aria-hidden="true">🔗</span>
+                <span>LinkedIn</span>
+              </a>
+
+              <a class="linkRow" href="https://github.com/ricardosergiodf" target="_blank" rel="noreferrer">
+                <span class="linkRow__icon" aria-hidden="true">💻</span>
+                <span>GitHub</span>
+              </a>
+            </div>
+
+            <div class="profileCard__footer">
+              <a class="btn btn--sm" href="#contato">Disponível para conversar</a>
+              <span class="hint">Resposta rápida por e-mail</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2>Sobre</h2>
+          <p>
+            Atuei em empresas de tecnologia focadas na construção de pipelines de automação e aplicações web.
+            Sou movido por otimização de processos, melhoria da eficiência operacional e entrega de valor por meio de código limpo.
+          </p>
+        </div>
+
+        <div class="cardsGrid">
+          <article class="card">
+            <h3>O que eu faço</h3>
+            <p>
+              Automação de processos, integração de rotinas, criação de fluxos repetíveis e monitoráveis,
+              com foco em reduzir tempo de execução e falhas humanas.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Como eu trabalho</h3>
+            <p>
+              Entendo o processo, encontro gargalos, proponho solução, implemento com qualidade (logs, validações, versionamento)
+              e entrego com visão de manutenção.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>O que me diferencia</h3>
+            <p>
+              Perfil “mão na massa”, autogestão e obsessão por eficiência operacional.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETÊNCIAS -->
+    <section class="section section--alt" id="competencias">
+      <div class="container">
+        <div class="section__head">
+          <h2>Competências</h2>
+          <p>Principais competências e tecnologias do meu dia a dia.</p>
+        </div>
+
+        <div class="chips" role="list">
+          <span class="chip" role="listitem">Automação de processos</span>
+          <span class="chip" role="listitem">Python</span>
+          <span class="chip" role="listitem">RPA</span>
+          <span class="chip" role="listitem">Hyperautomation</span>
+          <span class="chip" role="listitem">Git</span>
+          <span class="chip" role="listitem">Rocketbot</span>
+          <span class="chip" role="listitem">Automation Anywhere</span>
+          <span class="chip" role="listitem">IA aplicada</span>
+          <span class="chip" role="listitem">Autogestão</span>
+          <span class="chip" role="listitem">Produtividade</span>
+          <span class="chip" role="listitem">Fala e escuta eficazes</span>
+          <span class="chip" role="listitem">Metodologias ágeis</span>
+        </div>
+
+        <div class="callout">
+          <h3>Certificações / Cursos (destaque)</h3>
+          <ul class="list">
+            <li>AWS Robotic Process Automation - Scholarship Program</li>
+            <li>Computação em Nuvem Amazon AWS</li>
+            <li>Essentials Automation Certification - 2024</li>
+            <li>Bot Builder Rocketbot Expert Level 2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experiência</h2>
+          <p>Linha do tempo profissional.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timelineItem">
+            <div class="timelineItem__meta">
+              <span class="badge">jun/2025 → set/2025</span>
+              <span class="small">4 meses • PJ</span>
+            </div>
+            <h3>Trajetória — RPA Developer</h3>
+            <p>
+              Desenvolvimento e implementação de soluções RPA para otimização de processos e fluxos de trabalho.
+            </p>
+          </article>
+
+          <article class="timelineItem">
+            <div class="timelineItem__meta">
+              <span class="badge">nov/2024 → abr/2025</span>
+              <span class="small">6 meses</span>
+            </div>
+            <h3>Compass UOL — RPA Developer</h3>
+            <p>
+              Certificações e aplicação prática em automação (Automation Anywhere, BotCity, AWS e Python).
+              No projeto final, reduzimos um processo de ~1 hora para ~2 minutos com Python + BotCity.
+            </p>
+          </article>
+
+          <article class="timelineItem">
+            <div class="timelineItem__meta">
+              <span class="badge">nov/2023 → out/2024</span>
+              <span class="small">1 ano • Fortaleza/CE</span>
+            </div>
+            <h3>Techway Informática — Desenvolvedor de software</h3>
+            <p>
+              Desenvolvimento e manutenção de software na área jurídica e participação no app mobile jurídico “Lysis”.
+            </p>
+          </article>
+
+          <article class="timelineItem">
+            <div class="timelineItem__meta">
+              <span class="badge">mar/2022 → jun/2022</span>
+              <span class="small">4 meses • Fortaleza/CE</span>
+            </div>
+            <h3>TACTIUM BRASIL — Estagiário de Implantação</h3>
+            <p>Atuação em implantação e suporte a rotinas e sistemas do cliente (experiência prática em campo).</p>
+          </article>
+
+          <article class="timelineItem">
+            <div class="timelineItem__meta">
+              <span class="badge">ago/2018 → jun/2019</span>
+              <span class="small">11 meses • Fortaleza/CE</span>
+            </div>
+            <h3>Secretaria Executiva Regional 1 — Suporte Técnico de TI</h3>
+            <p>Atendimento e suporte técnico, resolução de incidentes e apoio operacional de TI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section section--alt" id="formacao">
+      <div class="container">
+        <div class="section__head">
+          <h2>Formação</h2>
+          <p>Formação acadêmica e base técnica.</p>
+        </div>
+
+        <div class="cardsGrid">
+          <article class="card">
+            <h3>UNINTER</h3>
+            <p><strong>Bacharelado em Sistemas de Informação</strong></p>
+            <p class="muted">2024 → ago/2027</p>
+          </article>
+
+          <article class="card">
+            <h3>IFCE</h3>
+            <p><strong>Ciência da Computação</strong></p>
+            <p class="muted">nov/2020 → Trancado</p>
+          </article>
+
+          <article class="card">
+            <h3>IFCE</h3>
+            <p><strong>Técnico em Informática</strong></p>
+            <p class="muted">2016 → ago/2019</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contato</h2>
+          <p>Se quiser trocar ideia sobre automação, RPA e projetos, me chama.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="card">
+            <h3>Vamos conversar</h3>
+            <p class="muted">Escolha um canal:</p>
+
+            <div class="contactActions">
+              <a class="btn" href="mailto:ricardosergiodf@gmail.com?subject=Contato%20-%20Portf%C3%B3lio">
+                Enviar e-mail
+              </a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/ricardo-duarte-dev" target="_blank" rel="noreferrer">
+                Mensagem no LinkedIn
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/ricardosergiodf" target="_blank" rel="noreferrer">
+                Ver GitHub
+              </a>
+            </div>
+
+            <p class="small">
+              <strong>E-mail:</strong> ricardosergiodf@gmail.com<br/>
+              <strong>Telefone:</strong> +55 (85) 99793-4028
+            </p>
+          </div>
+
+          <div class="card card--soft">
+            <h3>Resumo rápido</h3>
+            <p>
+              RPA Developer com foco em automação com Python, pipelines e eficiência operacional. Experiência com plataformas
+              de automação e entrega de valor com código limpo e escalável.
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="small muted">
+              © <span id="year"></span> Ricardo Duarte. Feito para GitHub Pages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="small muted">Fortaleza/CE • RPA • Python</span>
+      <a class="small" href="#topo">Voltar ao topo ↑</a>
     </div>
+  </footer>
 
-    <h3 class="fonte">Informações</h3>
-    <ul class="fonte">
-        <li>22 anos</li>
-        <li>Estudante de <strong>Desenvolvimento Web Full Stack - Trybe</strong></li>
-        <li>Estudante de <strong>Ciência da Computação - IFCE</strong></li>
-        <li><strong>Técnico</strong> de <strong>Informática - IFCE</strong></li>
-        <li><em>Fortaleza/CE - Brasil</em></li>
-    </ul>
-
-    <div>
-        <h3 class="fonte"><strong>Habilidades</strong></h3>
-    <ol>
-        <li class="habilidade1 impar">Trabalho em equipe</li>
-        <li class="habilidade2">Colaboração</li>
-        <li class="habilidade3 impar">Empatia</li>
-    </ol>
-    </div>
-
-    <div>
-        <p class="fonte"><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/ricardo-duarte-6b5910116/">LinkedIn</a></p>
-
-        <p class="fonte github"><a class="github" href="https://github.com/ricardosergiodf" target="_blank">Github</a></p>
-
-    <p class="fonte"><a href="#foto">Foto</a></p>
-    </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
